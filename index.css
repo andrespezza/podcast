@@ -114,6 +114,9 @@ h1 {
   font-size: 5.5vw;
   margin-left: 10vw;
 }
+.puntoAzul {
+  color: blue;
+}
 .intro {
   font-family: "IBM Plex Mono";
   font-weight: 300;
@@ -126,21 +129,24 @@ h1 {
   color: #060a24;
 }
 
-.botonUno button {
-  background-color: #00f3bb;
+.botonUno {
+  height: 2em;
+  line-height: 2em;
+  width: 12em;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: #00f3bb;
   border: none;
+  margin-top: 5rem;
   margin-left: 10vw;
-  margin-top: 6vw;
-  width: 18rem;
-  height: 5rem;
   font-size: 1.6vw;
   font-family: "IBM Plex Mono";
   color: #060a24;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 24px;
+  text-decoration: none;
 }
-.botonUno button:hover {
+.botonUno:hover {
   background: rgb(0, 243, 187);
   background: linear-gradient(
     90deg,
@@ -297,6 +303,7 @@ h2 {
   z-index: 2;
   color: white;
   padding: 2vw;
+  font-size: 4vh;
 }
 
 div .i {
@@ -311,22 +318,27 @@ i {
   padding: 15px;
 }
 
-.botonDos button {
+.botonDos {
   position: relative;
   z-index: 2;
-  background-color: #00f3bb;
+  text-decoration: none;
+  background: #00f3bb;
   border: none;
-  width: 14.125rem;
-  height: 3.5rem;
-  font-size: 1.125rem;
+  font-size: 1.6vw;
   font-family: "IBM Plex Mono";
   color: #060a24;
   letter-spacing: 0;
   text-align: center;
   line-height: 24px;
-  margin-bottom: 4vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.botonDos button:hover {
+.botonDosClass {
+  margin-bottom: 30px;
+}
+.botonDos:hover {
   background: rgb(0, 243, 187);
   background: linear-gradient(
     90deg,
@@ -351,11 +363,11 @@ i {
     rgba(255, 255, 255, 1) 100%
   );
   background-size: cover !important;
-  clip-path: polygon(0 53%, 100% 37%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 57%, 100% 37%, 100% 100%, 0% 100%);
 }
 footer {
   display: flex;
-  padding-top: 2vh;
+  padding-top: 1vh;
   z-index: 2;
   position: relative;
   background-color: white;
@@ -467,7 +479,7 @@ footer .iconos {
     line-height: 22px;
   }
 
-  .botonUno button {
+  .botonUno {
     align-items: center;
     width: 80%;
     font-size: 3vw;
@@ -489,7 +501,7 @@ footer .iconos {
   }
 
   .temas .titulos p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .reproductores h2 {
     font-size: 10vw;
@@ -497,16 +509,20 @@ footer .iconos {
     color: #ffffff;
   }
   .reproductores .reproductor {
-    width: 93.75%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 99%);
+    grid-column-gap: 5px;
+    grid-row-gap: 0.1em;
   }
 
   .reproductores .reproductor iframe {
-    margin: 0 0 11px 0;
+    margin: 0 0 5px 0;
     border: 0;
-    width: 80%;
+    width: 100%;
+    height: 40vh;
   }
 
   .dondeVenimosImg {
@@ -514,8 +530,12 @@ footer .iconos {
     align-items: center;
     margin-top: 10vh;
   }
+  .dondeVenimosImg .col-9 {
+    width: 80vw;
+    height: 100vh;
+  }
   .venimosTexto {
-    margin-top: 600px;
+    margin-top: 800px;
   }
   .venimosTexto .col-5 {
     width: 80%;
@@ -542,6 +562,9 @@ footer .iconos {
     letter-spacing: 0;
     line-height: 50px;
   }
+  .titulos img {
+    margin-top: 10vh;
+  }
   .novedades h2 {
     margin-top: 150px;
     margin-left: 27vw;
@@ -550,7 +573,7 @@ footer .iconos {
     font-size: 5vw;
     padding-bottom: 4vw;
   }
-  .botonDos button {
+  .botonDos {
     align-items: center;
     width: 80%;
     font-size: 3vw;
